@@ -3,20 +3,20 @@
 ## Par Nathan Bertaud, B3 dev A
 
 - 3 
-    - a) la commande est : docker run -d --name mon-nginx -p 80:80 nginx 
-    - b) la commande est : docker ps
+    - a) la commande est : ```docker run -d --name mon-nginx -p 80:80 nginx ```
+    - b) la commande est : ```docker ps```
 
     - c) les commandes sont :
-        1. docker exec -it mon-nginx bash
-        2. cd usr/share/nginx/html
-        3. echo "Hello World" > index.html
-        4. exit
+        1. ```docker exec -it mon-nginx bash```
+        2. ```cd usr/share/nginx/html```
+        3. ```echo "Hello World" > index.html```
+        4. ```exit```
     
-    - d) la commande est : docker run -d --name mon-nginx-volume -p 80:80 -v C:/Users/"Nathan Bertaud"/Desktop/devops-training-docker/html:/usr/share/nginx/html nginx
+    - d) la commande est :``` docker run -d --name mon-nginx-volume -p 80:80 -v C:/Users/"Nathan Bertaud"/Desktop/devops-training-docker/html:/usr/share/nginx/html nginx```
 
-    - e) la commande est : docker remove mon-nginx-volume
+    - e) la commande est : ```docker remove mon-nginx-volume```
 
-    - f) la commande est : docker cp C:/Users/"Nathan Bertaud"/Desktop/devops-training-docker/html/index.html d46dcc07ad6d:/usr/share/nginx/html/index.html
+    - f) la commande est : ```docker cp C:/Users/"Nathan Bertaud"/Desktop/devops-training-docker/html/index.html d46dcc07ad6d:/usr/share/nginx/html/index.html```
 
 - 4
     - a) voir Dockerfile
@@ -28,13 +28,13 @@
 
 - 5
     - a) les commandes sont :
-        1. docker pull phpmyadmin
-        2. docker pull mysql
+        1. ```docker pull phpmyadmin```
+        2. ```docker pull mysql```
 
     - b) les commandes sont : 
-        1. docker network create -d bridge reseau1
-        2. docker run -d --name mysql --network reseau1 -e MYSQL_ROOT_PASSWORD=motdepasse mysql
-        3. docker run -d --name phpmyadmin --network reseau1 -e PMA_HOST=mysql -e PMA_USER=root -e PMA_PASSWORD=motdepasse -p 8080:80 phpmyadmin
+        1. ```docker network create -d bridge reseau1```
+        2. ```docker run -d --name mysql --network reseau1 -e MYSQL_ROOT_PASSWORD=motdepasse mysql```
+        3.``` docker run -d --name phpmyadmin --network reseau1 -e PMA_HOST=mysql -e PMA_USER=root -e PMA_PASSWORD=motdepasse -p 8080:80 phpmyadmin```
         4. ![image de la table](image.png)
 
 - 6
