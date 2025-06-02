@@ -35,3 +35,16 @@
         1. docker network create -d bridge reseau1
         2. docker run -d --name mysql --network reseau1 -e MYSQL_ROOT_PASSWORD=motdepasse mysql
         3. docker run -d --name phpmyadmin --network reseau1 -e PMA_HOST=mysql -e PMA_USER=root -e PMA_PASSWORD=motdepasse -p 8080:80 phpmyadmin
+        4. ![image de la table](image.png)
+
+- 6
+    - a) `docker-compose` permet de définir et de gérer des applications multi-conteneurs à l'aide d'un fichier YAML (`docker-compose.yml`). Contrairement à `docker run`, qui lance un seul conteneur à la fois, `docker-compose` permet de lancer, configurer et gérer plusieurs conteneurs en une seule commande, facilitant ainsi l'orchestration et la gestion des dépendances entre services.
+    - b) La commande pour lancer tous les conteneurs définis dans le fichier YAML est :
+        ```
+        docker-compose up -d
+        ```
+        La commande pour les stopper est :
+        ```
+        docker-compose down
+        ```
+    - c) voir docker-compose.yml
