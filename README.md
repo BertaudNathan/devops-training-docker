@@ -17,3 +17,6 @@
     - e) la commande est : docker remove mon-nginx-volume
 
     - f) la commande est : docker cp C:/Users/"Nathan Bertaud"/Desktop/devops-training-docker/html/index.html d46dcc07ad6d:/usr/share/nginx/html/index.html
+
+- 4
+    - a) voir Dockerfile
